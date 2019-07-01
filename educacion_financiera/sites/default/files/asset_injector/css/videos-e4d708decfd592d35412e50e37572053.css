@@ -1,0 +1,8 @@
+.video {
+    margin-left: 15%;
+}
+
+.video iframe {
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0px black;
+}

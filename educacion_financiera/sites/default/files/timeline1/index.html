@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Historia de la Moneda en Ecuador</title>
+    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/jtline.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var contentText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+
+            // dataRoot : '/'
+            var myMappedObject = [
+                  {
+                      "isSelected": "true",
+                      "taskTitle": "Moneda de Quito",
+                      "taskSubTitle": "Año 1830",
+                      "assignDate": "01/01/1830",
+                      "taskShortDate": "1830",
+                      "taskDetails": '<img src=img/moneda1.png style="width:25%; margin-left:290px;"><p>Fueron las primeras monedas que circularon en nuestro país. Acuñadas en Cundinamarca (Colombia) con una marca de bajo relieve, con las letras MdQ (Moneda de Quito) entrelazadas. Estampadas en el año 1833, en la recién fundada Casa de la Moneda de Quito, por orden del General Juan José Flores. Algunos investigadores y tratadistas afirman que, esta marca, sólo fue hecha sobre monedas de un peso, pero el hallazgo constante de denominaciones inferiores en valor, afirman lo contrario.</p>'
+                  },
+                  {
+                      "isSelected": "",
+                      "taskTitle": "La etapa de 1833 - 1835",
+                      "taskSubTitle": "Año 1833",
+                      "assignDate": "01/01/1833",
+                      "taskShortDate": "1833",
+                      "taskDetails": '<img src=img/moneda2.png style="width:25%; margin-left:290px;"><p>En 1833 se inicia la circulación de las primeras monedas acuñadas por la casa de la Moneda de Quito. Durante este período nuestra numismática se enriquece con la constante aparición de nuevas monedas para los valores tradicionales y particularmente con el cambio de diseño experimentado en 1844 cuando Flores, para evitar que se mantenga el problema de la falsificación, hace realizar un nuevo cuño para las monedas de cuatro reales y ocho escudos.</p>'
+                  },
+                  {
+                      "isSelected": "",
+                      "taskTitle": "Última acuñación en la Casa de Moneda",
+                      "taskSubTitle": "Año 1836",
+                      "assignDate": "01/01/1836",
+                      "taskShortDate": "1836",
+                      "taskDetails": '<img src=img/moneda3.png style="width:25%; margin-left:290px;"><p>A las monedas de este año, no se les aplico, en su acuñación, lo cañones definidos por el sistema decimal, ya que la dominación que poseían era como el antigüo Sistema Octavario. Después de tres décadas, la Casa de la Moneda, finalmente cerró sus puertas. Los gobiernos de Flores, Rocafuerte, Urbina y García Moreno, no habían propiciado su desarrollo y la adopción de políticas económicas equivocadas.</p>'
+                  },
+                  {
+                      "isSelected": "",
+                      "taskTitle": "Adopción definitiva del Sistema Decimal",
+                      "taskSubTitle": "Año 1862",
+                      "assignDate": "01/01/1862",
+                      "taskShortDate": "1862",
+                      "taskDetails": '<img src=img/moneda4.png style="width:25%; margin-left:290px;"><p> En 1872 se mandaron a acuñar, en la ciudad de Birminghan, monedas de uno y dos centavos de cobre. Con esto nuestra economía entró en el sistema Decimal Francés. 12 años más tarde se reestructura el sistema monetario nacional definitivamente, creándose la unidad monetaria divisible en 100 centavos. La acuñación de la nueva moneda fue hecha en plata de 900 milésimas, de alto grado de pureza. Desde su creación hasta 1918 las acuñaciones fueron realizadas en Lima, Birminghan, Santiago de Chile y Filadelfia.</p>'
+                  },
+                  {
+                      "isSelected": "",
+                      "taskTitle": "Creación del Sucre",
+                      "taskSubTitle": "Año 1872",
+                      "assignDate": "01/01/1872",
+                      "taskShortDate": "1872",
+                      "taskDetails": '<img src=img/moneda5.png style="width:25%; margin-left:290px;"><p> En 1872 se mandaron a acuñar, en la ciudad de Birminghan, monedas de uno y dos centavos de cobre. Con esto nuestra economía entró en el sistema Decimal Francés. 12 años más tarde se reestructura el sistema monetario nacional definitivamente, creándose la unidad monetaria divisible en 100 centavos. La acuñación de la nueva moneda fue hecha en plata de 900 milésimas, de alto grado de pureza. Desde su creación hasta 1918 las acuñaciones fueron realizadas en Lima, Birminghan, Santiago de Chile y Filadelfia</p>'
+                  },
+                  {
+                      "isSelected": "",
+                      "taskTitle": "Monea Estadounidense",
+                      "taskSubTitle": "Año 2000",
+                      "assignDate": "01/01/2014",
+                      "taskShortDate": "2000",
+                      "taskDetails": '<img src=img/moneda6.png style="width:25%; margin-left:290px;"><p> En 1872 se mandaron a acuñar, en la ciudad de Birminghan, monedas de uno y dos centavos de cobre. Con esto nuestra economía entró en el sistema Decimal Francés. 12 años más tarde se reestructura el sistema monetario nacional definitivamente, creándose la unidad monetaria divisible en 100 centavos. La acuñación de la nueva moneda fue hecha en plata de 900 milésimas, de alto grado de pureza. Desde su creación hasta 1918 las acuñaciones fueron realizadas en Lima, Birminghan, Santiago de Chile y Filadelfia</p>'
+                  }
+            ];
+
+            var jtLine = $('.myjtline').jTLine({
+                callType: 'jsonObject',
+                structureObj: myMappedObject,
+                map: {
+                    "dataRoot": "/",
+                    "title": "taskTitle",
+                    "subTitle": "taskSubTitle",
+                    "dateValue": "assignDate",
+                    "pointCnt": "taskShortDate",
+                    "bodyCnt": "taskDetails"
+                },
+                distanceMode: 'fixDistance', // 'fixDistance' 'auto' 'predefinedDistance'
+                eventsMinDistance: 60,       // Consider It as Distance Unit "by Pixel"
+                fixDistanceValue: 2,         // if eventsMinDistance = 60 & fixDistanceValue= 2 then the value is: (60*2) = 120 px
+                firstPointMargin: 1          // First Point Margin from the left
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="myjtline">
+    </div>
+</body>
+</html>

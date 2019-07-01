@@ -1,0 +1,33 @@
+.header{
+  background: #003f72;
+}
+
+body{
+  background:#fff;
+  color:#000;
+}
+
+.brand.logo {
+    width: 120%;
+    margin: -0.5em 0em;
+}
+
+.sm.menu-base-theme a{
+  color:white;
+  /*text-transform: uppercase;*/
+}
+
+.sm.menu-base-theme a:hover{
+  color:#eaab00;
+  background:#003f72;
+}
+
+.footer{
+  background:#003f72;
+}
+
+
+.footer.field-content a{
+  color:#fff;
+  
+}

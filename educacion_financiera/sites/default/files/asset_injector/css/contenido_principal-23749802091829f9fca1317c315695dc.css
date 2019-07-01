@@ -1,0 +1,13 @@
+.text-align-justify {
+    width: 107%;
+}
+
+.field-content p > img {
+    width: 55%;
+    margin-left: -11%;
+    margin-right: 3%;
+}
+
+.main-content {
+    margin-top: -4%;
+}
